@@ -1,0 +1,354 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE8D396E640E4F01",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../ibex_hello_world.gen/sources_1/bd/secure_soc",
+      "name": "secure_soc",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1"
+    },
+    "design_tree": {
+      "clk_wiz": "",
+      "aes_axi_periph_0": "",
+      "smartconnect_0": "",
+      "bus_axi_periph_0": ""
+    },
+    "ports": {
+      "rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "sb_ready_1": {
+        "direction": "O"
+      },
+      "sb_rvalid_1": {
+        "direction": "O"
+      },
+      "sb_req_1": {
+        "direction": "I"
+      },
+      "sb_we_1": {
+        "direction": "I"
+      },
+      "sb_rdata_1": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "sb_addr_1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "sb_wdata_1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "sb_be_1": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "16",
+        "xci_name": "secure_soc_clk_wiz_3",
+        "xci_path": "ip/secure_soc_clk_wiz_3/secure_soc_clk_wiz_3.xci",
+        "inst_hier_path": "clk_wiz",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "124.615"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "100.0"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "CLK_IN2_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "ENABLE_CLOCK_MONITOR": {
+            "value": "false"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "10.000"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          },
+          "PRIM_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          }
+        }
+      },
+      "aes_axi_periph_0": {
+        "vlnv": "user.org:user:aes_axi_periph:1.0",
+        "ip_revision": "7",
+        "xci_name": "secure_soc_aes_axi_periph_0_2",
+        "xci_path": "ip/secure_soc_aes_axi_periph_0_2/secure_soc_aes_axi_periph_0_2.xci",
+        "inst_hier_path": "aes_axi_periph_0",
+        "has_run_ip_tcl": "true"
+      },
+      "smartconnect_0": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "ip_revision": "27",
+        "xci_name": "secure_soc_smartconnect_0_3",
+        "xci_path": "ip/secure_soc_smartconnect_0_3/secure_soc_smartconnect_0_3.xci",
+        "inst_hier_path": "smartconnect_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "NUM_SI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI"
+            ],
+            "bd_attributes": {
+              "BRIDGES": {
+                "value": "M00_AXI",
+                "value_src": "auto"
+              },
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bd_attributes": {
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          }
+        }
+      },
+      "bus_axi_periph_0": {
+        "vlnv": "user.org:user:bus_axi_periph:1.0",
+        "ip_revision": "14",
+        "xci_name": "secure_soc_bus_axi_periph_0_5",
+        "xci_path": "ip/secure_soc_bus_axi_periph_0_5/secure_soc_bus_axi_periph_0_5.xci",
+        "inst_hier_path": "bus_axi_periph_0",
+        "has_run_ip_tcl": "true",
+        "interface_ports": {
+          "M_AXI": {
+            "bd_attributes": {
+              "TYPE": {
+                "value": "END_POINT",
+                "value_src": "auto"
+              }
+            },
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "m_axi",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "m_axi": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "bus_axi_periph_0_M_AXI": {
+        "interface_ports": [
+          "bus_axi_periph_0/M_AXI",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "aes_axi_periph_0/S00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "bus_axi_periph_0_sb_rdata": {
+        "ports": [
+          "bus_axi_periph_0/sb_rdata",
+          "sb_rdata_1"
+        ]
+      },
+      "bus_axi_periph_0_sb_ready": {
+        "ports": [
+          "bus_axi_periph_0/sb_ready",
+          "sb_ready_1"
+        ]
+      },
+      "bus_axi_periph_0_sb_rvalid": {
+        "ports": [
+          "bus_axi_periph_0/sb_rvalid",
+          "sb_rvalid_1"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "smartconnect_0/aclk",
+          "aes_axi_periph_0/s00_axi_aclk",
+          "bus_axi_periph_0/clk"
+        ]
+      },
+      "rst_n_0_1": {
+        "ports": [
+          "rst_n_0",
+          "clk_wiz/resetn",
+          "smartconnect_0/aresetn",
+          "aes_axi_periph_0/s00_axi_aresetn",
+          "bus_axi_periph_0/rst_n"
+        ]
+      },
+      "sb_addr_1_1": {
+        "ports": [
+          "sb_addr_1",
+          "bus_axi_periph_0/sb_addr"
+        ]
+      },
+      "sb_be_1_1": {
+        "ports": [
+          "sb_be_1",
+          "bus_axi_periph_0/sb_be"
+        ]
+      },
+      "sb_req_1_1": {
+        "ports": [
+          "sb_req_1",
+          "bus_axi_periph_0/sb_req"
+        ]
+      },
+      "sb_wdata_1_1": {
+        "ports": [
+          "sb_wdata_1",
+          "bus_axi_periph_0/sb_wdata"
+        ]
+      },
+      "sb_we_1_1": {
+        "ports": [
+          "sb_we_1",
+          "bus_axi_periph_0/sb_we"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      }
+    },
+    "addressing": {
+      "/bus_axi_periph_0": {
+        "address_spaces": {
+          "m_axi": {
+            "segments": {
+              "SEG_aes_axi_periph_0_S00_AXI_reg": {
+                "address_block": "/aes_axi_periph_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x00090000",
+                "range": "64K",
+                "offset_base_param": "C_S00_AXI_BASEADDR",
+                "offset_high_param": "C_S00_AXI_HIGHADDR"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
