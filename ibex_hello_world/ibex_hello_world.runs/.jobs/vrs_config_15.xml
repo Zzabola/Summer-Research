@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="secure_soc_aes_axi_periph_0_2_synth_1" LaunchDir="/home/llia622/ibex_hello_world/ibex_hello_world.runs/secure_soc_aes_axi_periph_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="secure_soc_bus_axi_periph_0_5_synth_1" LaunchDir="/home/llia622/ibex_hello_world/ibex_hello_world.runs/secure_soc_bus_axi_periph_0_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="secure_soc_clk_wiz_3_synth_1" LaunchDir="/home/llia622/ibex_hello_world/ibex_hello_world.runs/secure_soc_clk_wiz_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="secure_soc_smartconnect_0_3_synth_1" LaunchDir="/home/llia622/ibex_hello_world/ibex_hello_world.runs/secure_soc_smartconnect_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

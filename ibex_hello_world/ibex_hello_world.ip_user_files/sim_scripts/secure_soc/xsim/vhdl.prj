@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_1/sim/bd_ebbb_psr_aclk_0.vhd" \
+"../../../bd/secure_soc/ip/secure_soc_proc_sys_reset_0_0/sim/secure_soc_proc_sys_reset_0_0.vhd" \
+
+# Do not sort compile order
+nosort

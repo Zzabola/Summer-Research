@@ -2,47 +2,56 @@
    "ActiveEmotionalView":"Default View",
    "Addressing View_ScaleFactor":"1.0",
    "Addressing View_TopLeft":"-342,-126",
-   "Default View_ScaleFactor":"0.591984",
-   "Default View_TopLeft":"-765,850",
+   "Default View_ScaleFactor":"0.63355",
+   "Default View_TopLeft":"-1064,562",
    "Display-PortTypeOthers":"true",
    "ExpandedHierarchyInLayout":"",
    "Reduced Jogs_ScaleFactor":"0.485666",
    "Reduced Jogs_TopLeft":"-111,-369",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port port-id_rst_n_0 -pg 1 -lvl 0 -x -600 -y 1080 -defaultsOSRD
 preplace port port-id_sys_clock -pg 1 -lvl 0 -x -600 -y 1050 -defaultsOSRD
-preplace port port-id_sb_ready_1 -pg 1 -lvl 4 -x 1020 -y 1340 -defaultsOSRD
-preplace port port-id_sb_rvalid_1 -pg 1 -lvl 4 -x 1020 -y 1270 -defaultsOSRD
-preplace port port-id_sb_req_1 -pg 1 -lvl 0 -x -600 -y 1230 -defaultsOSRD
-preplace port port-id_sb_we_1 -pg 1 -lvl 0 -x -600 -y 1260 -defaultsOSRD
-preplace portBus sb_rdata_1 -pg 1 -lvl 4 -x 1020 -y 1310 -defaultsOSRD
-preplace portBus sb_addr_1 -pg 1 -lvl 0 -x -600 -y 1290 -defaultsOSRD
-preplace portBus sb_wdata_1 -pg 1 -lvl 0 -x -600 -y 1320 -defaultsOSRD
-preplace portBus sb_be_1 -pg 1 -lvl 0 -x -600 -y 1360 -defaultsOSRD
-preplace inst clk_wiz -pg 1 -lvl 1 -x -40 -y 1040 -defaultsOSRD
-preplace inst aes_axi_periph_0 -pg 1 -lvl 3 -x 840 -y 1180 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 3 -x 840 -y 1520 -defaultsOSRD
-preplace inst bus_axi_periph_0 -pg 1 -lvl 2 -x 300 -y 1300 -defaultsOSRD
-preplace netloc clk_0_1 1 1 2 170 1180 690
-preplace netloc rst_n_0_1 1 0 3 -130 1110 160 1170 650
-preplace netloc sys_clock_1 1 0 1 NJ 1050
-preplace netloc bus_axi_periph_0_sb_ready 1 2 2 660J 1340 NJ
-preplace netloc bus_axi_periph_0_sb_rvalid 1 2 2 680J 1270 NJ
-preplace netloc sb_req_1_1 1 0 2 NJ 1230 80J
-preplace netloc sb_we_1_1 1 0 2 NJ 1260 70J
-preplace netloc bus_axi_periph_0_sb_rdata 1 2 2 NJ 1310 NJ
-preplace netloc sb_addr_1_1 1 0 2 NJ 1290 60J
-preplace netloc sb_wdata_1_1 1 0 2 NJ 1320 50J
-preplace netloc sb_be_1_1 1 0 2 NJ 1360 NJ
-preplace netloc smartconnect_0_M00_AXI 1 2 2 700 1280 980
-preplace netloc bus_axi_periph_0_M_AXI 1 2 1 670 1270n
-levelinfo -pg 1 -600 -40 300 840 1020
+preplace port port-id_sb_ready_0 -pg 1 -lvl 6 -x 1530 -y 1350 -defaultsOSRD
+preplace port port-id_sb_rvalid_0 -pg 1 -lvl 6 -x 1530 -y 1280 -defaultsOSRD
+preplace port port-id_sb_req_0 -pg 1 -lvl 0 -x -600 -y 1210 -defaultsOSRD
+preplace port port-id_sb_we_0 -pg 1 -lvl 0 -x -600 -y 1270 -defaultsOSRD
+preplace port port-id_rst_n_0 -pg 1 -lvl 0 -x -600 -y 1530 -defaultsOSRD
+preplace port port-id_clk_out1_0 -pg 1 -lvl 6 -x 1530 -y 1040 -defaultsOSRD
+preplace portBus sb_rdata_0 -pg 1 -lvl 6 -x 1530 -y 1310 -defaultsOSRD
+preplace portBus sb_addr_0 -pg 1 -lvl 0 -x -600 -y 1300 -defaultsOSRD
+preplace portBus sb_wdata_0 -pg 1 -lvl 0 -x -600 -y 1330 -defaultsOSRD
+preplace portBus sb_be_0 -pg 1 -lvl 0 -x -600 -y 1360 -defaultsOSRD
+preplace inst aes_axi_periph_0 -pg 1 -lvl 5 -x 1383 -y 1210 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1060 -y 1520 -defaultsOSRD
+preplace inst bus_axi_periph_0 -pg 1 -lvl 3 -x 540 -y 1300 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 5 -x 1383 -y 1050 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 540 -y 850 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -90 -y 1050 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 170 -y 860 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 170 -y 700 -defaultsOSRD
+preplace netloc bus_axi_periph_0_sb_rdata 1 3 3 NJ 1310 NJ 1310 N
+preplace netloc bus_axi_periph_0_sb_ready 1 3 3 NJ 1330 NJ 1330 1490
+preplace netloc bus_axi_periph_0_sb_rvalid 1 3 3 NJ 1290 NJ 1290 1490
+preplace netloc sb_addr_0_1 1 0 3 NJ 1300 N 1300 320
+preplace netloc sb_be_0_1 1 0 3 NJ 1360 N 1360 N
+preplace netloc sb_req_0_1 1 0 3 NJ 1210 N 1210 340
+preplace netloc sb_wdata_0_1 1 0 3 NJ 1330 N 1330 360
+preplace netloc sb_we_0_1 1 0 3 NJ 1270 N 1270 330
+preplace netloc sys_clock_1 1 0 1 -580 1050n
+preplace netloc clk_wiz_0_clk_out1 1 1 5 NJ 1040 350 1180 920J 1180 1263J 1120 1490J
+preplace netloc xlconstant_0_dout 1 2 1 360 850n
+preplace netloc clk_wiz_0_locked 1 1 2 0 920 340J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 3 360 1170 720J 1230 N
+preplace netloc Net 1 0 2 -180 700 NJ
+preplace netloc util_vector_logic_0_Res 1 2 1 360 700n
+preplace netloc bus_axi_periph_0_M_AXI 1 3 1 730J 1270n
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1253 1040n
+levelinfo -pg 1 -600 -90 170 540 1060 1383 1530
 pagesize -pg 1 -db -bbox -sgen -770 -620 3270 2500
 "
 }
 {
    "da_axi4_cnt":"3",
-   "da_board_cnt":"17",
-   "da_clkrst_cnt":"13"
+   "da_board_cnt":"20",
+   "da_clkrst_cnt":"15"
 }

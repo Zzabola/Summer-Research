@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="70" Path="/home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="f57921383a71454bb1765381f1ac616d"/>
+    <Option Name="Id" Val="b23af256fac64973aad8074b799b1cfb"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -102,6 +102,62 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/AES.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/AES_decrypt.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/AES_encrypt.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/g_funct.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/inv_s_box.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/key_expansion.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../Downloads/AES-128-master/s_box.sv">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../../../ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
@@ -116,7 +172,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="aes_axi_periph"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph.v"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../Downloads/AES-128-master/AES.sv"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
