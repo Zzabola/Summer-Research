@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="70" Path="/home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b23af256fac64973aad8074b799b1cfb"/>
+    <Option Name="Id" Val="ecbb0ea8041b4a9585bac3e035669e98"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -172,7 +172,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="aes_axi_periph"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../Downloads/AES-128-master/AES.sv"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph.v"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

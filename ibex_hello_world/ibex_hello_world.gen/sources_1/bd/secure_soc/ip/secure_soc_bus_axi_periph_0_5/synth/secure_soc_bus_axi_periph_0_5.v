@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:bus_axi_periph:1.0
-// IP Revision: 18
+// IP Revision: 30
 
 (* X_CORE_INFO = "bus_to_axi,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "secure_soc_bus_axi_periph_0_5,bus_to_axi,{}" *)
@@ -83,12 +83,14 @@ module secure_soc_bus_axi_periph_0_5 (
   m_axi_rvalid,
   m_axi_rready,
   m_axi_awprot,
-  m_axi_arprot
+  m_axi_arprot,
+  dbg_sb_req,
+  dbg_in_write
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF M_AXI, ASSOCIATED_RESET rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_clk_out1, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF M_AXI, ASSOCIATED_RESET rst_n, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst_n RST" *)
 (* X_INTERFACE_MODE = "slave" *)
@@ -104,8 +106,8 @@ output wire [31 : 0] sb_rdata;
 output wire sb_ready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWADDR" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, NUM_WRITE_THREADS 1, NUM_READ_THREADS 1, MAX_BURST_LENGTH 1, HAS_RRESP 1, HAS_BRESP 1, HAS_WSTRB 1, HAS_PROT 1, ADDR_WIDTH 32, PROTOCOL AXI4LITE, DATA_WIDTH 32, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_clk_out1, \
-RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, NUM_WRITE_THREADS 1, NUM_READ_THREADS 1, MAX_BURST_LENGTH 1, HAS_RRESP 1, HAS_BRESP 1, HAS_WSTRB 1, HAS_PROT 1, ADDR_WIDTH 32, PROTOCOL AXI4LITE, DATA_WIDTH 32, FREQ_HZ 50000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1,\
+ RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
 output wire [31 : 0] m_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWVALID" *)
 output wire m_axi_awvalid;
@@ -143,6 +145,8 @@ output wire m_axi_rready;
 output wire [2 : 0] m_axi_awprot;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARPROT" *)
 output wire [2 : 0] m_axi_arprot;
+output wire dbg_sb_req;
+output wire dbg_in_write;
 
   bus_to_axi inst (
     .clk(clk),
@@ -173,6 +177,8 @@ output wire [2 : 0] m_axi_arprot;
     .m_axi_rvalid(m_axi_rvalid),
     .m_axi_rready(m_axi_rready),
     .m_axi_awprot(m_axi_awprot),
-    .m_axi_arprot(m_axi_arprot)
+    .m_axi_arprot(m_axi_arprot),
+    .dbg_sb_req(dbg_sb_req),
+    .dbg_in_write(dbg_in_write)
   );
 endmodule

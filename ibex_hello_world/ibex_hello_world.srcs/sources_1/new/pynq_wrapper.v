@@ -12,7 +12,7 @@ module pynq_wrapper (
   // your clock divider + reset release logic here
   // clk_sys, rst_sys_n produced
 
-  // sb wires between Ibex and BD
+//  // sb wires between Ibex and BD
   wire        sb_req;
   wire        sb_we;
   wire [31:0] sb_addr;
@@ -21,7 +21,7 @@ module pynq_wrapper (
   wire        sb_rvalid;
   wire [31:0] sb_rdata;
   wire        sb_ready;
-
+  
   // BD wrapper (after you export sb_* from BD!)
   secure_soc_wrapper u_bd (
     .clk_out1_0 (clk_sys), 
@@ -43,7 +43,7 @@ module pynq_wrapper (
   );
 
   ibex_simple_system #(
-    .SRAMInitFile("/home/llia622/ibex/examples/sw/simple_system/hello_test/hello.vmem")
+    .SRAMInitFile("/home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem")
   ) u_ibex (
     .IO_CLK       (clk_sys),
     .IO_RST_N     (rst_sys_n),
@@ -58,7 +58,8 @@ module pynq_wrapper (
     .aes_rvalid_i (sb_rvalid),
     .aes_rdata_i  (sb_rdata),
 
-    .aes_err_i    (1'b0)      // tie off, unless you add an err output
+    .aes_err_i    (1'b0),
+    .aes_ready_i  (sb_ready)
   );
 
   assign uart_tx = 1'b1;

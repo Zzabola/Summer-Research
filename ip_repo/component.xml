@@ -33,7 +33,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">50000000</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>28446812</spirit:value>
+            <spirit:value>6311bfe5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -312,7 +312,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>28446812</spirit:value>
+            <spirit:value>6311bfe5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -785,6 +785,32 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_sb_req</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_in_write</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:choices>
@@ -800,7 +826,7 @@
       <spirit:file>
         <spirit:name>src/bus_to_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_28446812</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6311bfe5</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -855,15 +881,15 @@
       </xilinx:taxonomies>
       <xilinx:displayName>bus_axi_periph_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>18</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-05T03:25:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>30</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-25T01:57:16Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="17d6f5c2"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="32afcded"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="68e94c68"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="550e82a5"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="c2fdc8d1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6578fb1a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="581b61fb"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bbba02cc"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

@@ -1,100 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1768280489">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1771991342">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="pynq_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="pynq_wrapper_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="pynq_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="pynq_wrapper.drc"/>
+  <File Type="BG-BGN" Name="pynq_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="pynq_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="pynq_wrapper.ltx"/>
+  <File Type="PL-LTX-FILE" Name="pynq_wrapper_pld.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="pynq_wrapper_boot.ltx"/>
+  <File Type="LTX-FILE" Name="pynq_wrapper.ltx"/>
+  <File Type="PL-BIF-FILE" Name="pynq_wrapper_pld.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="pynq_wrapper_boot.bif"/>
+  <File Type="BIF-FILE" Name="pynq_wrapper.bif"/>
+  <File Type="MMI-FILE" Name="pynq_wrapper.mmi"/>
+  <File Type="RBD_FILE" Name="pynq_wrapper.rbd"/>
+  <File Type="NPI_FILE" Name="pynq_wrapper.npi"/>
   <File Type="PL_UNMASK_RCDO_FILE" Name="pynq_wrapper_pld_unmask.rcdo"/>
   <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="pynq_wrapper_pld_unmask_markers.rcdo"/>
   <File Type="PL_MASK_RCDO_FILE" Name="pynq_wrapper_pld_mask.rcdo"/>
   <File Type="PL_MARKER_RCDO_FILE" Name="pynq_wrapper_pld_markers.rcdo"/>
   <File Type="PL-CLEAR-RCDO-FILE" Name="pynq_wrapper_pld_clear.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="pynq_wrapper_pld.rcdo"/>
   <File Type="PL_UNMASK_RNPI_FILE" Name="pynq_wrapper_pld_unmask.rnpi"/>
   <File Type="PL_SHUTDOWN_RNPI_FILE" Name="pynq_wrapper_pld_shutdown.rnpi"/>
   <File Type="PL_MASK_RNPI_FILE" Name="pynq_wrapper_pld_mask.rnpi"/>
   <File Type="PL_MARKER_RNPI_FILE" Name="pynq_wrapper_pld_markers.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="pynq_wrapper_boot_markers.rnpi"/>
   <File Type="PL_RNPI_FILE" Name="pynq_wrapper_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="pynq_wrapper_boot_markers.rnpi"/>
   <File Type="BOOT_RNPI_FILE" Name="pynq_wrapper_boot.rnpi"/>
-  <File Type="MARKER-RNPI-FILE" Name="pynq_wrapper_markers.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="pynq_wrapper_pld.rcdo"/>
   <File Type="MARKER-RCDO-FILE" Name="pynq_wrapper_markers.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="pynq_wrapper_markers.rnpi"/>
   <File Type="RCDO-FILE" Name="pynq_wrapper.rcdo"/>
-  <File Type="PL-LTX-FILE" Name="pynq_wrapper_pld.ltx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pynq_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="RNPI_FILE" Name="pynq_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="pynq_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="pynq_wrapper.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="pynq_wrapper_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="pynq_wrapper_boot.pdi"/>
+  <File Type="PDI-FILE" Name="pynq_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="pynq_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="pynq_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="pynq_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="pynq_wrapper.rbt"/>
   <File Type="BITSTR-MSK" Name="pynq_wrapper.msk"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="pynq_wrapper_bus_skew_routed.pb"/>
+  <File Type="BG-BIN" Name="pynq_wrapper.bin"/>
+  <File Type="BG-BIT" Name="pynq_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pynq_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pynq_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pynq_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pynq_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pynq_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pynq_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pynq_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pynq_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="pynq_wrapper_rqs_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="pynq_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="pynq_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW" Name="pynq_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="pynq_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="pynq_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="pynq_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="pynq_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pynq_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC" Name="pynq_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="pynq_wrapper_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="pynq_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-PWR" Name="pynq_wrapper_power_routed.rpt"/>
-  <File Type="BG-DRC" Name="pynq_wrapper.drc"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pynq_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="pynq_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pynq_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="pynq_wrapper_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="pynq_wrapper_route_status.rpt"/>
-  <File Type="BITSTR-BMM" Name="pynq_wrapper_bd.bmm"/>
-  <File Type="ROUTE-TIMING-RPX" Name="pynq_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="pynq_wrapper_timing_summary_routed.rpt"/>
-  <File Type="BG-BGN" Name="pynq_wrapper.bgn"/>
+  <File Type="ROUTE-PWR-RPX" Name="pynq_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="pynq_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="pynq_wrapper_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pynq_wrapper_methodology_drc_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="pynq_wrapper_reports.tcl"/>
-  <File Type="PA-TCL" Name="pynq_wrapper.tcl"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pynq_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="pynq_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="PLACE-CTRL" Name="pynq_wrapper_control_sets_placed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pynq_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="BITSTR-MMI" Name="pynq_wrapper.mmi"/>
-  <File Type="BITSTR-NKY" Name="pynq_wrapper.nky"/>
-  <File Type="PLACE-UTIL" Name="pynq_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="pynq_wrapper_utilization_placed.pb"/>
-  <File Type="OPT-DRC" Name="pynq_wrapper_drc_opted.rpt"/>
-  <File Type="PLACE-IO" Name="pynq_wrapper_io_placed.rpt"/>
-  <File Type="BG-BIN" Name="pynq_wrapper.bin"/>
-  <File Type="BITSTR-RBT" Name="pynq_wrapper.rbt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pynq_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pynq_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pynq_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pynq_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="RDI-RDI" Name="pynq_wrapper.vdi"/>
-  <File Type="PDI-FILE" Name="pynq_wrapper.pdi"/>
-  <File Type="BG-BIT" Name="pynq_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="pynq_wrapper.sysdef"/>
-  <File Type="MMI-FILE" Name="pynq_wrapper.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="pynq_wrapper.ltx"/>
-  <File Type="BIF-FILE" Name="pynq_wrapper.bif"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BOOT-LTX-FILE" Name="pynq_wrapper_boot.ltx"/>
-  <File Type="OPT-HWDEF" Name="pynq_wrapper.hwdef"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="pynq_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="pynq_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="pynq_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="pynq_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="pynq_wrapper_utilization_routed.pb"/>
+  <File Type="ROUTE-UTIL" Name="pynq_wrapper_utilization_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pynq_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="pynq_wrapper_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="pynq_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="pynq_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="pynq_wrapper_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="pynq_wrapper_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="pynq_wrapper_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="pynq_wrapper_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="pynq_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="pynq_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="pynq_wrapper_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="pynq_wrapper_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pynq_wrapper_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pynq_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="BOOT-PDI-FILE" Name="pynq_wrapper_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="pynq_wrapper_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="pynq_wrapper.rcfi"/>
-  <File Type="CFI_FILE" Name="pynq_wrapper.cfi"/>
-  <File Type="RNPI_FILE" Name="pynq_wrapper.rnpi"/>
-  <File Type="NPI_FILE" Name="pynq_wrapper.npi"/>
-  <File Type="RBD_FILE" Name="pynq_wrapper.rbd"/>
-  <File Type="ROUTE-RQS" Name="pynq_wrapper_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="pynq_wrapper_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="BOOT-BIF-FILE" Name="pynq_wrapper_boot.bif"/>
-  <File Type="PL-BIF-FILE" Name="pynq_wrapper_pld.bif"/>
-  <File Type="LTX-FILE" Name="pynq_wrapper.ltx"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pynq_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pynq_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="pynq_wrapper_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="pynq_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pynq_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pynq_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="pynq_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pynq_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="pynq_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pynq_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="pynq_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="pynq_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="pynq_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pynq_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="pynq_wrapper_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="pynq_wrapper_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="pynq_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="pynq_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pynq_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="pynq_wrapper_utilization_opted.pb"/>
+  <File Type="OPT-UTIL" Name="pynq_wrapper_utilization_opted.rpt"/>
+  <File Type="OPT-DRC" Name="pynq_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="pynq_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="pynq_wrapper_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="pynq_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="pynq_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/secure_soc/secure_soc.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/secure_soc/hdl/secure_soc_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/bus.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -117,10 +149,10 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_flop_macros.sv">
-      <FileInfo SFType="VHeader">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert_dummy_macros.svh">
@@ -138,10 +170,10 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert.sv">
-      <FileInfo SFType="VHeader">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_branch_predict.sv">
@@ -592,34 +624,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/pynq_wrapper.sv">
+    <File Path="$PSRCDIR/sources_1/new/pynq_wrapper.v">
       <FileInfo>
-        <Attr Name="Library" Val="ibex"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_top_tracing_0.1/rtl/ibex_top_tracing.sv">
-      <FileInfo>
-        <Attr Name="Library" Val="ibex"/>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer_pkg.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -650,6 +656,63 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_mubi_0.1/rtl/prim_mubi32_sync.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/AES-128-master/g_funct.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/AES-128-master/inv_s_box.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/AES-128-master/s_box.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bus_to_axi.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_top_tracing_0.1/rtl/ibex_top_tracing.sv">
+      <FileInfo>
+        <Attr Name="Library" Val="ibex"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer_pkg.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -1341,6 +1404,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/pynq_z2.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -1359,7 +1423,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -1369,6 +1435,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -106,7 +107,9 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 5
   set_param general.usePosixSpawnForFork 1
+  set_param tcl.collectionResultDisplayLimit 0
   set_param xicom.use_bs_reader 1
+  set_param bd.open.in_stealth_mode 1
   set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
@@ -118,11 +121,22 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/llia622/ibex_hello_world/ibex_hello_world.cache/wt [current_project]
   set_property parent.project_path /home/llia622/ibex_hello_world/ibex_hello_world.xpr [current_project]
+  set_property ip_repo_paths {
+  /home/llia622/ip_repo/aes_axi_periph_1_0
+  /home/llia622/ip_repo
+  /home/llia622/ip_repo/aes_axi_wrapper_1_0
+} [current_project]
+  update_ip_catalog
   set_property ip_output_repo /home/llia622/ibex_hello_world/ibex_hello_world.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/llia622/ibex_hello_world/ibex_hello_world.runs/synth_1/pynq_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files /home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/secure_soc.bd
+  set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc /home/llia622/ibex_hello_world/ibex_hello_world.srcs/constrs_1/new/pynq_z2.xdc
 OPTRACE "read constraints: implementation" END { }
@@ -130,8 +144,10 @@ OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
+  set_param project.isImplRun true
   link_design -top pynq_wrapper -part xc7z020clg400-1 
 OPTRACE "link_design" END { }
+  set_param project.isImplRun false
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
@@ -290,6 +306,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi pynq_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

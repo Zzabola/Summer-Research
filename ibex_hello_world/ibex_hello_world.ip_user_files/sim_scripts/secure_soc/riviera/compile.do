@@ -46,19 +46,19 @@ vcom -work xpm -93  -incr \
 "/home/llia622/2025.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
-"../../../bd/secure_soc/ipshared/c06d/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v" \
+"../../../bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v" \
 
 vlog -work xil_defaultlib  -incr "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
-"../../../bd/secure_soc/ipshared/c06d/9abd/g_funct.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/inv_s_box.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/AES_decrypt.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/AES_encrypt.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/s_box.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/key_expansion.sv" \
-"../../../bd/secure_soc/ipshared/c06d/9abd/AES.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/g_funct.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/inv_s_box.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/AES_decrypt.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/AES_encrypt.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/s_box.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/key_expansion.sv" \
+"../../../bd/secure_soc/ipshared/dc68/9abd/AES.sv" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
-"../../../bd/secure_soc/ipshared/c06d/hdl/aes_axi_periph.v" \
+"../../../bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph.v" \
 "../../../bd/secure_soc/ip/secure_soc_aes_axi_periph_0_2/sim/secure_soc_aes_axi_periph_0_2.v" \
 "../../../bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/sim/bd_ebbb.v" \
 
@@ -137,24 +137,24 @@ vlog -work xil_defaultlib  -incr "+incdir+../../../../ibex_hello_world.gen/sourc
 "../../../bd/secure_soc/ip/secure_soc_smartconnect_0_3/sim/secure_soc_smartconnect_0_3.sv" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
-"../../../bd/secure_soc/ipshared/909a/src/bus_to_axi.v" \
+"../../../bd/secure_soc/ipshared/ab92/src/bus_to_axi.v" \
 "../../../bd/secure_soc/ip/secure_soc_bus_axi_periph_0_5/sim/secure_soc_bus_axi_periph_0_5.v" \
-"../../../bd/secure_soc/ip/secure_soc_ila_1_0/sim/secure_soc_ila_1_0.v" \
-"../../../bd/secure_soc/sim/secure_soc.v" \
-
-vcom -work xil_defaultlib -93  -incr \
-"../../../bd/secure_soc/ip/secure_soc_proc_sys_reset_0_0/sim/secure_soc_proc_sys_reset_0_0.vhd" \
-
-vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
 "../../../bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0.v" \
-"../../../bd/secure_soc/ip/secure_soc_xlconstant_0_0/sim/secure_soc_xlconstant_0_0.v" \
+"../../../bd/secure_soc/ip/secure_soc_ila_0_0/sim/secure_soc_ila_0_0.v" \
+"../../../bd/secure_soc/ip/secure_soc_ila_1_0/sim/secure_soc_ila_1_0.v" \
+"../../../bd/secure_soc/ip/secure_soc_ila_2_0/sim/secure_soc_ila_2_0.v" \
+"../../../bd/secure_soc/ip/secure_soc_ila_3_0/sim/secure_soc_ila_3_0.v" \
+"../../../bd/secure_soc/sim/secure_soc.v" \
 
 vlog -work util_vector_logic_v2_0_5  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
 "../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/e056/hdl/util_vector_logic_v2_0_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/f0b6/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ec67/hdl" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a9be" "+incdir+../../../../../2025.1/data/rsb/busdef" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/5431/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/4e08/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/537f/hdl/verilog" "+incdir+../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/d41f/hdl/verilog" "+incdir+/home/llia622/2025.1/Vivado/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l xlconstant_v1_1_10 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_35 -l axi_vip_v1_1_21 -l util_vector_logic_v2_0_5 \
-"../../../bd/secure_soc/ip/secure_soc_util_vector_logic_0_0/sim/secure_soc_util_vector_logic_0_0.v" \
+"../../../bd/secure_soc/ip/secure_soc_util_vector_logic_0_2/sim/secure_soc_util_vector_logic_0_2.v" \
+
+vcom -work xil_defaultlib -93  -incr \
+"../../../bd/secure_soc/ip/secure_soc_proc_sys_reset_1_0/sim/secure_soc_proc_sys_reset_1_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

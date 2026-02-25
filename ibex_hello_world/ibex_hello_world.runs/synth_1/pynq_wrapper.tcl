@@ -58,36 +58,43 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
 set_param general.usePosixSpawnForFork 1
+set_param tcl.collectionResultDisplayLimit 0
 set_param xicom.use_bs_reader 1
+set_param bd.open.in_stealth_mode 1
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/llia622/ibex_hello_world/ibex_hello_world.cache/wt [current_project]
 set_property parent.project_path /home/llia622/ibex_hello_world/ibex_hello_world.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {/home/llia622/.Xilinx/Vivado/2025.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+set_property ip_repo_paths {
+  /home/llia622/ip_repo/aes_axi_periph_1_0
+  /home/llia622/ip_repo
+  /home/llia622/ip_repo/aes_axi_wrapper_1_0
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/llia622/ibex_hello_world/ibex_hello_world.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog {
-  /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_flop_macros.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert_dummy_macros.svh
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert_sec_cm.svh
-  /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_dv_dv_fcov_macros_0/dv_fcov_macros.svh
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_get_scramble_params_0/rtl/prim_util_get_scramble_params.svh
 }
-set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_flop_macros.sv]
 set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert_dummy_macros.svh]
 set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert_sec_cm.svh]
-set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert.sv]
 set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_dv_dv_fcov_macros_0/dv_fcov_macros.svh]
 set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh]
 set_property file_type "Verilog Header" [get_files /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_get_scramble_params_0/rtl/prim_util_get_scramble_params.svh]
@@ -96,6 +103,8 @@ read_verilog -library xil_defaultlib -sv {
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/bus.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv
+  /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_flop_macros.sv
+  /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_assert_0.1/rtl/prim_assert.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_branch_predict.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv
@@ -158,7 +167,43 @@ read_verilog -library xil_defaultlib -sv {
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/ram_2p.sv
   /home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv
 }
-read_verilog -library ibex -sv /home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/new/pynq_wrapper.sv
+read_verilog -library xil_defaultlib {
+  /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/hdl/secure_soc_wrapper.v
+  /home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/new/pynq_wrapper.v
+}
+add_files /home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/secure_soc.bd
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_1/bd_ebbb_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_5/bd_ebbb_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_6/bd_ebbb_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_7/bd_ebbb_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_8/bd_ebbb_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_9/bd_ebbb_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_10/bd_ebbb_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/ip/ip_11/bd_ebbb_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/smartconnect.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/secure_soc_ila_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/secure_soc_ila_1_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/secure_soc_ila_2_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_3_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_3_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_3_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_3_0/secure_soc_ila_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_proc_sys_reset_1_0/secure_soc_proc_sys_reset_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/secure_soc_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -171,6 +216,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc /home/llia622/ibex_hello_world/ibex_hello_world.srcs/constrs_1/new/pynq_z2.xdc
 set_property used_in_implementation false [get_files /home/llia622/ibex_hello_world/ibex_hello_world.srcs/constrs_1/new/pynq_z2.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental /home/llia622/ibex_hello_world/ibex_hello_world.srcs/utils_1/imports/synth_1/pynq_wrapper.dcp
