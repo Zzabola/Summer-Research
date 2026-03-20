@@ -1,0 +1,93 @@
+#include <stdint.h>
+
+#define AES_BASE       0x00090000u
+
+#define AES_CTRL       (AES_BASE + 0x00u)
+#define AES_STATUS     (AES_BASE + 0x04u)
+
+#define AES_KEY0       (AES_BASE + 0x10u) // reg4  (LSW)
+#define AES_KEY1       (AES_BASE + 0x14u) // reg5
+#define AES_KEY2       (AES_BASE + 0x18u) // reg6
+#define AES_KEY3       (AES_BASE + 0x1Cu) // reg7  (MSW)
+
+#define AES_DIN0       (AES_BASE + 0x20u) // reg8  (LSW)
+#define AES_DIN1       (AES_BASE + 0x24u) // reg9
+#define AES_DIN2       (AES_BASE + 0x28u) // reg10
+#define AES_DIN3       (AES_BASE + 0x2Cu) // reg11 (MSW)
+
+#define AES_DOUT0      (AES_BASE + 0x30u) // reg12 (LSW)
+#define AES_DOUT1      (AES_BASE + 0x34u) // reg13
+#define AES_DOUT2      (AES_BASE + 0x38u) // reg14
+#define AES_DOUT3      (AES_BASE + 0x3Cu) // reg15 (MSW)
+
+static inline void mmio_write(uint32_t addr, uint32_t val) {
+  *(volatile uint32_t *)addr = val;
+}
+
+static inline uint32_t mmio_read(uint32_t addr) {
+  return *(volatile uint32_t *)addr;
+}
+
+static void delay(volatile uint32_t n) {
+  while (n--) { __asm__ volatile ("nop"); }
+}
+
+int main(void) {
+  // Example AES-128 test vectors (you can replace these later)
+  // Key: 2b7e1516 28aed2a6 abf71588 09cf4f3c
+  // PT : 3243f6a8 885a308d 313198a2 e0370734
+  // CT : 3925841d 02dc09fb dc118597 196a0b32
+  uint32_t key0 = 0x09cf4f3c;
+  uint32_t key1 = 0xabf71588;
+  uint32_t key2 = 0x28aed2a6;
+  uint32_t key3 = 0x2b7e1516;
+
+  uint32_t pt0  = 0xe0370734;
+  uint32_t pt1  = 0x313198a2;
+  uint32_t pt2  = 0x885a308d;
+  uint32_t pt3  = 0x3243f6a8;
+
+  // Write key (reg4..7)
+  mmio_write(AES_KEY0, key0);
+  mmio_write(AES_KEY1, key1);
+  mmio_write(AES_KEY2, key2);
+  mmio_write(AES_KEY3, key3);
+
+  // Pulse set_key
+  mmio_write(AES_CTRL, 1u << 0);
+
+  // Wait key_done (bit0)
+  while ((mmio_read(AES_STATUS) & (1u << 0)) == 0) {
+    mmio_write(AES_CTRL, 1u << 0);
+    delay(50000);
+  }
+
+  // Write plaintext (reg8..11)
+  mmio_write(AES_DIN0, pt0);
+  mmio_write(AES_DIN1, pt1);
+  mmio_write(AES_DIN2, pt2);
+  mmio_write(AES_DIN3, pt3);
+
+  // Pulse encrypt
+  mmio_write(AES_CTRL, 1u << 1);
+
+  // Wait enc_done (bit1)
+  while ((mmio_read(AES_STATUS) & (1u << 1)) == 0) {
+    //  delay(100);
+    mmio_write(AES_CRTL, 1u << 1);
+    delay(50000);
+  }
+
+  // Read ciphertext (reg12..15)
+  volatile uint32_t ct0 = mmio_read(AES_DOUT0);
+  volatile uint32_t ct1 = mmio_read(AES_DOUT1);
+  volatile uint32_t ct2 = mmio_read(AES_DOUT2);
+  volatile uint32_t ct3 = mmio_read(AES_DOUT3);
+
+  // Optional: park here so you can probe ct* in ILA by watching reads
+  (void)ct0; (void)ct1; (void)ct2; (void)ct3;
+
+  while (1) { }
+
+  return 0;
+}
