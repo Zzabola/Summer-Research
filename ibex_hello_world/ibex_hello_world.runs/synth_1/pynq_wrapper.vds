@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Wed Feb 25 16:49:03 2026
-# Process ID         : 989976
+# Start of session at: Fri Mar 13 16:10:51 2026
+# Process ID         : 3561536
 # Current directory  : /home/llia622/ibex_hello_world/ibex_hello_world.runs/synth_1
 # Command line       : vivado -log pynq_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pynq_wrapper.tcl
 # Log file           : /home/llia622/ibex_hello_world/ibex_hello_world.runs/synth_1/pynq_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
-# CPU Frequency      : 800.334 MHz
+# CPU Frequency      : 898.603 MHz
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 33325 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 35473 MB
-# Available Virtual  : 26318 MB
+# Available Virtual  : 18317 MB
 #-----------------------------------------------------------
 source pynq_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -40,11 +40,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 990108
+INFO: [Synth 8-7075] Helper process launched with PID 3561674
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2211.758 ; gain = 439.625 ; free physical = 17476 ; free virtual = 23804
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2212.785 ; gain = 440.680 ; free physical = 4268 ; free virtual = 16132
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-11067] parameter 'ADDR_W' declared inside package 'ibex_pkg' shall be treated as localparam [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv:381]
 WARNING: [Synth 8-11067] parameter 'BUS_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv:382]
@@ -252,34 +254,32 @@ INFO: [Synth 8-6157] synthesizing module 'pynq_wrapper' [/home/llia622/ibex_hell
 INFO: [Synth 8-6157] synthesizing module 'secure_soc_wrapper' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/hdl/secure_soc_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'secure_soc' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/synth/secure_soc.v:13]
 INFO: [Synth 8-6157] synthesizing module 'secure_soc_aes_axi_periph_0_2' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_aes_axi_periph_0_2/synth/secure_soc_aes_axi_periph_0_2.v:53]
-INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph.v:4]
-INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:154]
-INFO: [Synth 8-226] default block is never used [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:241]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:390]
-INFO: [Synth 8-226] default block is never used [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:431]
-INFO: [Synth 8-6157] synthesizing module 'AES' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES.sv:2]
-INFO: [Synth 8-6157] synthesizing module 's_box' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/s_box.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 's_box' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/s_box.sv:1]
-WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES.sv:97]
-WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES.sv:103]
-INFO: [Synth 8-6157] synthesizing module 'key_expansion' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/key_expansion.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'g_funct' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/g_funct.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'g_funct' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/g_funct.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/key_expansion.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'AES_encrypt' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES_encrypt.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'AES_encrypt' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES_encrypt.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'AES_decrypt' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES_decrypt.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'inv_s_box' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/inv_s_box.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'inv_s_box' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/inv_s_box.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'AES_decrypt' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES_decrypt.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'AES' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/9abd/AES.sv:2]
-INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph.v:4]
+INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph.v:4]
+INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:531]
+INFO: [Synth 8-226] default block is never used [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:572]
+INFO: [Synth 8-6157] synthesizing module 'AES' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES.sv:2]
+INFO: [Synth 8-6157] synthesizing module 's_box' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 's_box' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/s_box.sv:1]
+WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES.sv:97]
+WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/key_expansion.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'g_funct' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/g_funct.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'g_funct' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/g_funct.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/key_expansion.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_encrypt' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES_encrypt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_encrypt' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES_encrypt.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_decrypt' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES_decrypt.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'inv_s_box' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/inv_s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'inv_s_box' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/inv_s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_decrypt' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES_decrypt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/9abd/AES.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'secure_soc_aes_axi_periph_0_2' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_aes_axi_periph_0_2/synth/secure_soc_aes_axi_periph_0_2.v:53]
 INFO: [Synth 8-6157] synthesizing module 'secure_soc_bus_axi_periph_0_5' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_bus_axi_periph_0_5/synth/secure_soc_bus_axi_periph_0_5.v:53]
-INFO: [Synth 8-6157] synthesizing module 'bus_to_axi' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:199]
-INFO: [Synth 8-6155] done synthesizing module 'bus_to_axi' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:199]
+INFO: [Synth 8-6157] synthesizing module 'bus_to_axi' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'bus_to_axi' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:199]
 INFO: [Synth 8-6155] done synthesizing module 'secure_soc_bus_axi_periph_0_5' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_bus_axi_periph_0_5/synth/secure_soc_bus_axi_periph_0_5.v:53]
 INFO: [Synth 8-6157] synthesizing module 'secure_soc_clk_wiz_0_0' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0.v:65]
 INFO: [Synth 8-6157] synthesizing module 'secure_soc_clk_wiz_0_0_clk_wiz' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_clk_wiz_0_0/secure_soc_clk_wiz_0_0_clk_wiz.v:65]
@@ -487,14 +487,14 @@ INFO: [Synth 8-6155] done synthesizing module 'bd_ebbb_swn_0' (0#1) [/home/llia6
 INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1WCD7DI' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/synth/bd_ebbb.v:1349]
 INFO: [Synth 8-6155] done synthesizing module 'bd_ebbb' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/bd_0/synth/bd_ebbb.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'secure_soc_smartconnect_0_3' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_smartconnect_0_3/synth/secure_soc_smartconnect_0_3.v:53]
-INFO: [Synth 8-6157] synthesizing module 'secure_soc_util_vector_logic_0_2' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_util_vector_logic_0_2/synth/secure_soc_util_vector_logic_0_2.v:53]
-INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_5_util_vector_logic' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/e056/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
-INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_5_util_vector_logic' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/e056/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
-INFO: [Synth 8-6155] done synthesizing module 'secure_soc_util_vector_logic_0_2' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_util_vector_logic_0_2/synth/secure_soc_util_vector_logic_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'secure_soc_util_vector_logic_0_2' [/home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/ip/secure_soc_util_vector_logic_0_2/synth/secure_soc_util_vector_logic_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_5_util_vector_logic' [/home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/ipshared/e056/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_5_util_vector_logic' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/ipshared/e056/hdl/util_vector_logic_v2_0_vl_rfs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'secure_soc_util_vector_logic_0_2' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/bd/secure_soc/ip/secure_soc_util_vector_logic_0_2/synth/secure_soc_util_vector_logic_0_2.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'secure_soc' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/synth/secure_soc.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'secure_soc_wrapper' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/hdl/secure_soc_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'ibex_simple_system' [/home/llia622/ibex/examples/simple_system/rtl/ibex_simple_system.sv:33]
-	Parameter SRAMInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem - type: string 
+	Parameter SRAMInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem - type: string 
 INFO: [Synth 8-6157] synthesizing module 'bus' [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/bus.sv:17]
 	Parameter NrDevices bound to: 32'sb00000000000000000000000000000100 
 	Parameter NrHosts bound to: 32'sb00000000000000000000000000000001 
@@ -821,14 +821,14 @@ INFO: [Synth 8-6155] done synthesizing module 'ibex_core' (0#1) [/home/llia622/i
 INFO: [Synth 8-6155] done synthesizing module 'ibex_top' (0#1) [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:15]
 INFO: [Synth 8-6157] synthesizing module 'ram_2p' [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/ram_2p.sv:11]
 	Parameter Depth bound to: 32'sb00000000000000000100000000000000 
-	Parameter MemInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem - type: string 
+	Parameter MemInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem - type: string 
 INFO: [Synth 8-6157] synthesizing module 'prim_ram_2p' [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:9]
 	Parameter Width bound to: 32'sb00000000000000000000000000100000 
 	Parameter Depth bound to: 32'sb00000000000000000100000000000000 
 	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000 
-	Parameter MemInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem - type: string 
-INFO: [Synth 8-251] Initializing memory  from file '/home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem'. [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh:67]
-INFO: [Synth 8-3876] $readmem data file '/home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem' is read successfully [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh:68]
+	Parameter MemInitFile bound to: /home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem - type: string 
+INFO: [Synth 8-251] Initializing memory  from file '/home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem'. [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh:67]
+INFO: [Synth 8-3876] $readmem data file '/home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem' is read successfully [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh:68]
 INFO: [Synth 8-6155] done synthesizing module 'prim_ram_2p' (0#1) [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'ram_2p' (0#1) [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/ram_2p.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'timer' [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:9]
@@ -838,11 +838,11 @@ INFO: [Synth 8-294] found qualifier unique on case statement: implementing as pa
 INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'ibex_simple_system' (0#1) [/home/llia622/ibex/examples/simple_system/rtl/ibex_simple_system.sv:33]
 INFO: [Synth 8-6155] done synthesizing module 'pynq_wrapper' (0#1) [/home/llia622/ibex_hello_world/ibex_hello_world.srcs/sources_1/new/pynq_wrapper.v:1]
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/dc68/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:149]
-WARNING: [Synth 8-6014] Unused sequential element req_we_reg was removed.  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:288]
-WARNING: [Synth 8-6014] Unused sequential element req_addr_reg was removed.  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:289]
-WARNING: [Synth 8-6014] Unused sequential element req_wdata_reg was removed.  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:290]
-WARNING: [Synth 8-6014] Unused sequential element req_be_reg was removed.  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/ab92/src/bus_to_axi.v:291]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_aes_core'. This will prevent further optimization [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/746f/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:796]
+WARNING: [Synth 8-7137] Register m_axi_awaddr_reg in module bus_to_axi has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:402]
+WARNING: [Synth 8-7137] Register m_axi_wdata_reg in module bus_to_axi has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:405]
+WARNING: [Synth 8-7137] Register m_axi_wstrb_reg in module bus_to_axi has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:406]
+WARNING: [Synth 8-7137] Register m_axi_araddr_reg in module bus_to_axi has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/1e21/src/bus_to_axi.v:414]
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity secure_soc_ila_0_0 does not have driver. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/synth/secure_soc_ila_0_0.v:114]
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity secure_soc_ila_1_0 does not have driver. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/synth/secure_soc_ila_1_0.v:134]
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity secure_soc_ila_2_0 does not have driver. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/synth/secure_soc_ila_2_0.v:134]
@@ -857,6 +857,9 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_2'. This will prevent further optimization [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/synth/secure_soc.v:191]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aes_axi_periph_0'. This will prevent further optimization [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/synth/secure_soc.v:101]
 WARNING: [Synth 8-3936] Found unconnected internal register 'mhpmcounter_incr_reg' and it is trimmed from '32' to '3' bits. [/home/llia622/ibex/build/lowrisc_ibex_ibex_simple_system_0/sim-verilator/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:1285]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_bus'. This will prevent further optimization [/home/llia622/ibex/examples/simple_system/rtl/ibex_simple_system.sv:175]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_top'. This will prevent further optimization [/home/llia622/ibex/examples/simple_system/rtl/ibex_simple_system.sv:242]
+WARNING: [Synth 8-6014] Unused sequential element aes_is_read_hold_reg was removed.  [/home/llia622/ibex/examples/simple_system/rtl/ibex_simple_system.sv:422]
 WARNING: [Synth 8-3917] design pynq_wrapper has port uart_tx driven by constant 1
 WARNING: [Synth 8-7129] Port timer_addr_i[31] in module timer is either unconnected or has no load
 WARNING: [Synth 8-7129] Port timer_addr_i[30] in module timer is either unconnected or has no load
@@ -960,18 +963,18 @@ WARNING: [Synth 8-7129] Port mem_store_i in module ibex_cs_registers is either u
 WARNING: [Synth 8-7129] Port dside_wait_i in module ibex_cs_registers is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2959.977 ; gain = 1187.844 ; free physical = 11551 ; free virtual = 17894
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2962.004 ; gain = 1189.898 ; free physical = 623 ; free virtual = 10502
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2959.977 ; gain = 1187.844 ; free physical = 11551 ; free virtual = 17894
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2962.004 ; gain = 1189.898 ; free physical = 621 ; free virtual = 10501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2959.977 ; gain = 1187.844 ; free physical = 11551 ; free virtual = 17894
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2962.004 ; gain = 1189.898 ; free physical = 621 ; free virtual = 10501
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.54 . Memory (MB): peak = 2959.977 ; gain = 0.000 ; free physical = 11567 ; free virtual = 17900
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2962.004 ; gain = 0.000 ; free physical = 621 ; free virtual = 10490
 INFO: [Netlist 29-17] Analyzing 690 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1020,44 +1023,35 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/pynq_wrapper
 INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3020.086 ; gain = 0.000 ; free physical = 11557 ; free virtual = 17890
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3022.113 ; gain = 0.000 ; free physical = 660 ; free virtual = 10530
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 503 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 436 instances
   CFGLUT5 => SRLC32E: 65 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3020.121 ; gain = 0.000 ; free physical = 11556 ; free virtual = 17891
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3022.148 ; gain = 0.000 ; free physical = 660 ; free virtual = 10531
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 3020.121 ; gain = 1247.988 ; free physical = 11520 ; free virtual = 17855
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:56 . Memory (MB): peak = 3022.148 ; gain = 1250.043 ; free physical = 628 ; free virtual = 10499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 3028.090 ; gain = 1255.957 ; free physical = 11520 ; free virtual = 17855
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:56 . Memory (MB): peak = 3030.117 ; gain = 1258.012 ; free physical = 628 ; free virtual = 10499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 3028.090 ; gain = 1255.957 ; free physical = 11520 ; free virtual = 17855
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 3028.090 ; gain = 1255.957 ; free physical = 11587 ; free virtual = 17928
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 3028.090 ; gain = 1255.957 ; free physical = 11587 ; free virtual = 17928
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:56 . Memory (MB): peak = 3030.117 ; gain = 1258.012 ; free physical = 628 ; free virtual = 10499
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_expansion'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_encrypt'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_decrypt'
-INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
 INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bus_to_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
@@ -1145,14 +1139,6 @@ INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'AES_decry
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                     Idle |                               00 |                               00
-                   Waddr |                               01 |                               10
-                   Wdata |                               10 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    Idle |                               00 |                               00
                    Raddr |                               01 |                               10
                    Rdata |                               10 |                               11
 ---------------------------------------------------------------------------------------------------
@@ -1160,11 +1146,11 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using enco
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                               00 |                               00
-                    READ |                               01 |                               10
-                   WRITE |                               10 |                               01
+                    IDLE |                              001 |                               00
+                   WRITE |                              010 |                               01
+                    READ |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bus_to_axi'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'bus_to_axi'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1460,24 +1446,14 @@ INFO: [Synth 8-3354] encoded FSM with state register 'ls_fsm_cs_reg' using encod
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                AES_IDLE |                               00 |                               00
-         AES_WAIT_ACCEPT |                               01 |                               01
-         AES_WAIT_RVALID |                               10 |                               10
+                AES_IDLE |                              001 |                               00
+         AES_WAIT_ACCEPT |                              010 |                               01
+         AES_WAIT_RVALID |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'aes_state_reg' using encoding 'sequential' in module 'ibex_simple_system'
+INFO: [Synth 8-3354] encoded FSM with state register 'aes_state_reg' using encoding 'one-hot' in module 'ibex_simple_system'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 3173.090 ; gain = 1400.957 ; free physical = 11499 ; free virtual = 17841
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:06 . Memory (MB): peak = 3096.117 ; gain = 1324.012 ; free physical = 569 ; free virtual = 10446
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1496,368 +1472,71 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design pynq_wrapper has port uart_tx driven by constant 1
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '2' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/0133/hdl/sc_exit_v1_0_vl_rfs.sv:4182]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/0133/hdl/sc_exit_v1_0_vl_rfs.sv:4182]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '16' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/0133/hdl/sc_exit_v1_0_vl_rfs.sv:4111]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/0133/hdl/sc_exit_v1_0_vl_rfs.sv:4111]
-INFO: [Synth 8-4471] merging register 'gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i_reg[0:0]' into 'gen_endpoint.gen_w_singleorder.w_singleorder/gen_id_reg.s_rid_i_reg[0:0]' [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/2da8/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv:216]
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '156' to '138' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv:615]
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '156' to '138' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv:615]
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '23' to '5' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv:615]
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '69' to '52' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv:615]
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '70' to '53' bits. [/home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ipshared/a8e4/hdl/sc_node_v1_0_vl_rfs.sv:615]
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/clk_map/psr_aclk/U0/SEQ/core_dec_reg[1]' (FD) to 'smartconnect_0/inst/clk_map/psr_aclk/U0/SEQ/bsr_dec_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[3]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[4]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[2]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.r_cnt_reg[1]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[0]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[51]' (FDE) to 'smartconnect_0/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[18]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (smartconnect_0/inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[18] )
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.aresetn_d_reg[0]' (FDR) to 'smartconnect_0/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_id_reg.aresetn_d_reg[0]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.aresetn_d_reg[1]' (FDR) to 'smartconnect_0/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_id_reg.aresetn_d_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_reg.aresetn_d_reg[0]' (FDR) to 'smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_reg.aresetn_d_reg[0]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_reg.aresetn_d_reg[1]' (FDR) to 'smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_reg.aresetn_d_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[3]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[4]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[2]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.b_cnt_reg[1]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[0]' (FDE) to 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[127]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[127]' (FDE) to 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[128]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[128]' (FDE) to 'smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[129]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (smartconnect_0/inst/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg[129] )
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[3]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[4]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[2]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (smartconnect_0/inst/\s00_entry_pipeline/s00_mmu/inst /\gen_endpoint.w_cnt_reg[1] )
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_cnt_reg[0]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_enable_reg'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[0]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[1]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[1]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[2]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[2]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[3]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[3]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[4]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[4]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[5]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[5]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[6]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[6]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[7]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[7]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[8]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[8]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[9]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[9]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[10]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[10]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[11]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[11]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[12]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[12]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[13]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[13]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[14]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[14]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[15]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[15]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[16]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[16]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[17]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[17]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[18]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[18]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[19]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[19]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[20]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[20]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[21]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[21]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[22]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[22]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[23]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[23]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[24]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[24]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[25]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[25]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[26]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[26]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[27]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[27]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[28]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[28]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[29]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[29]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[30]'
-INFO: [Synth 8-3886] merging instance 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[30]' (FDRE) to 'smartconnect_0/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.w_state_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (smartconnect_0/inst/\s00_entry_pipeline/s00_mmu/inst /\gen_endpoint.w_state_reg[31] )
+WARNING: [Synth 8-6841] Block RAM (u_ibex/u_ram/u_ram/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-3971] The signal "pynq_wrapper/u_ibex/u_ram/u_ram/mem_reg" was recognized as a true dual port RAM template.
 WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_ebbb.
 WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_ebbb.
 WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_ebbb.
 WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_ebbb.
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[1008]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[1009]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[992]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[993]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[976]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[977]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[960]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[961]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[944]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[945]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[928]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[929]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[912]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[913]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[896]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[897]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[880]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[881]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[864]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[865]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[848]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[849]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[832]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[833]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[816]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[817]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[800]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[801]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[784]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[785]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[768]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[769]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[752]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[753]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[736]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[737]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[720]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[721]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[704]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[705]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[688]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[689]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[672]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[673]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[656]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[657]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[640]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[641]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[624]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[625]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[608]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[609]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[592]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[593]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[576]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[577]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[560]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[561]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[544]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[545]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[528]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[529]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[512]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[513]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[496]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[497]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[480]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[481]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[464]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[465]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[448]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[449]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[432]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[433]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[416]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[417]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[400]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[401]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[384]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[385]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[368]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[369]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[352]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[353]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[336]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[337]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[320]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[321]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[304]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[305]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[288]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[289]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[272]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[273]'
-INFO: [Synth 8-3886] merging instance 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[256]' (FDRE) to 'ila_1/inst/ila_core_inst/u_ila_regs/shift_reg1_reg[257]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/shift_reg1_reg[1023] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/shift_reg0_reg[1023] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_trig/shift_cap_strg_qual_reg )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/slaveRegDo_ff7_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[16].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[12].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[11].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[9].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[8].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[7].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[6].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[0].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[4].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[3].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[1].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_4 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[18].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[17].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[13].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[3].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[2].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[2].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[15].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[7].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[6].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[5].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[4].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[15].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[14].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[13].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[12].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[11].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[10].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[9].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[8].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[18].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[17].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[16].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_3 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[14].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[10].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[5].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[1].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/slaveRegDo_ff8_reg[7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_0 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_1 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/slaveRegDo_ff8_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/CNT_WIDTH_STATUS[0].cnt_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/CNT_WIDTH_STATUS[1].cnt_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/CNT_WIDTH_STATUS[2].cnt_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/CNT_WIDTH_STATUS[3].cnt_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_88f /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_892 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_88d /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_88c /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_887 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[18].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[18].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[17].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[17].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[16].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[16].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[15].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[15].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[14].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[14].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[13].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[13].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[12].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[12].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[11].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[11].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[10].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[10].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[9].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[9].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[8].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[8].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[7].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[7].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[6].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[6].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[5].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[5].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[4].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[0].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[4].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[3].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[3].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[2].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[2].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[1].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[1].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[0].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_86 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ila_1/inst/ila_core_inst/\u_ila_regs/reg_14 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
-INFO: [Synth 8-5546] ROM "mcountinhibit_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dbg_csr" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mstatus_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dcsr_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mie_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mscratch_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mepc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcause_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mtval_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "depc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch0_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch1_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "cpuctrlsts_part_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcountinhibit_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dbg_csr" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mstatus_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dcsr_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mie_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mscratch_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mepc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcause_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mtval_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "depc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch0_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch1_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "cpuctrlsts_part_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "cm_stack_adj_base" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "cm_stack_adj_base" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "rf_ren_b_o" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "mult_sel_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "div_sel_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "data_req_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "data_we_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "branch_in_dec_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "rf_ren_b_o" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "mult_sel_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "div_sel_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "data_req_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "data_we_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "branch_in_dec_o" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mfip_id" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mfip_id" won't be mapped to RAM because it is too sparse
-DSP Report: Generating DSP mac_res_signed, operation Mode is: C+A*B.
-DSP Report: operator mac_res_signed is absorbed into DSP mac_res_signed.
-DSP Report: operator mac_res_signed0 is absorbed into DSP mac_res_signed.
-INFO: [Synth 8-5546] ROM "dbg_csr" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcountinhibit_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mstatus_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dcsr_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mie_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mscratch_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mepc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcause_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mtval_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "depc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch0_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch1_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "cpuctrlsts_part_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dbg_csr" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcountinhibit_we" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mstatus_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dcsr_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mie_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mscratch_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mepc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mcause_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "mtval_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "depc_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch0_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "dscratch1_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "cpuctrlsts_part_we" won't be mapped to RAM because it is too sparse
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-6841] Block RAM (u_ibex/u_ram/u_ram/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
-(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
-INFO: [Synth 8-3971] The signal "pynq_wrapper__GC0/u_ibex/u_ram/u_ram/mem_reg" was recognized as a true dual port RAM template.
-WARNING: [Synth 8-3332] Sequential element (FSM_sequential_ls_fsm_cs_reg[2]) is unused and will be removed from module ibex_load_store_unit.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:15 . Memory (MB): peak = 3210.023 ; gain = 1437.891 ; free physical = 11047 ; free virtual = 17473
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:03:00 . Memory (MB): peak = 3358.953 ; gain = 1586.848 ; free physical = 1198 ; free virtual = 10243
 ---------------------------------------------------------------------------------
  Sort Area is pynq_wrapper__GC0 mac_res_signed_0 : 0 0 : 2365 2365 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:32 ; elapsed = 00:02:23 . Memory (MB): peak = 3341.109 ; gain = 1568.977 ; free physical = 11886 ; free virtual = 18358
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:11 ; elapsed = 00:03:08 . Memory (MB): peak = 3362.871 ; gain = 1590.766 ; free physical = 1955 ; free virtual = 11001
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:50 ; elapsed = 00:02:41 . Memory (MB): peak = 3563.766 ; gain = 1791.633 ; free physical = 11751 ; free virtual = 18223
+Finished Timing Optimization : Time (s): cpu = 00:03:20 ; elapsed = 00:03:18 . Memory (MB): peak = 3527.945 ; gain = 1755.840 ; free physical = 1780 ; free virtual = 10827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance i_0/u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:53 ; elapsed = 00:02:48 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10710 ; free virtual = 17194
+Finished Technology Mapping : Time (s): cpu = 00:03:25 ; elapsed = 00:03:23 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1776 ; free virtual = 10822
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1871,38 +1550,6 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance u_ibex/u_ram/u_ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
@@ -2008,37 +1655,37 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:56 ; elapsed = 00:02:51 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10648 ; free virtual = 17189
+Finished IO Insertion : Time (s): cpu = 00:03:28 ; elapsed = 00:03:25 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1786 ; free virtual = 10832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:57 ; elapsed = 00:02:51 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10648 ; free virtual = 17189
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:28 ; elapsed = 00:03:25 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1787 ; free virtual = 10833
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:58 ; elapsed = 00:02:53 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10650 ; free virtual = 17191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:29 ; elapsed = 00:03:26 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1791 ; free virtual = 10837
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:58 ; elapsed = 00:02:53 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10650 ; free virtual = 17191
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:29 ; elapsed = 00:03:26 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1791 ; free virtual = 10837
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:58 ; elapsed = 00:02:53 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10651 ; free virtual = 17192
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:29 ; elapsed = 00:03:27 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1795 ; free virtual = 10841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:58 ; elapsed = 00:02:53 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10651 ; free virtual = 17192
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:29 ; elapsed = 00:03:27 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1795 ; free virtual = 10841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2063,15 +1710,15 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |   266|
+|2     |CARRY4    |   258|
 |3     |CFGLUT5   |   501|
 |4     |DSP48E1   |     1|
-|5     |LUT1      |   235|
-|6     |LUT2      |   962|
-|7     |LUT3      |  1262|
-|8     |LUT4      |  1386|
-|9     |LUT5      |  1571|
-|10    |LUT6      |  7551|
+|5     |LUT1      |   378|
+|6     |LUT2      |  1149|
+|7     |LUT3      |  1574|
+|8     |LUT4      |  1239|
+|9     |LUT5      |  1427|
+|10    |LUT6      |  7428|
 |11    |MUXF7     |   872|
 |12    |MUXF8     |   193|
 |13    |PLLE2_ADV |     1|
@@ -2081,22 +1728,22 @@ Report Cell Usage:
 |33    |SRL16E    |   377|
 |34    |SRLC16E   |     8|
 |35    |SRLC32E   |    68|
-|36    |FDCE      |  3737|
-|37    |FDPE      |     8|
-|38    |FDRE      |  8814|
-|39    |FDSE      |    52|
+|36    |FDCE      |  3607|
+|37    |FDPE      |     9|
+|38    |FDRE      |  8887|
+|39    |FDSE      |    53|
 |40    |IBUF      |     2|
 |41    |OBUF      |     2|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:58 ; elapsed = 00:02:53 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 10651 ; free virtual = 17192
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:29 ; elapsed = 00:03:27 . Memory (MB): peak = 3556.953 ; gain = 1784.848 ; free physical = 1793 ; free virtual = 10840
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 587 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:49 ; elapsed = 00:02:47 . Memory (MB): peak = 3575.691 ; gain = 1743.414 ; free physical = 16219 ; free virtual = 22761
-Synthesis Optimization Complete : Time (s): cpu = 00:02:58 ; elapsed = 00:02:55 . Memory (MB): peak = 3575.691 ; gain = 1803.559 ; free physical = 16243 ; free virtual = 22761
+Synthesis finished with 0 errors, 0 critical warnings and 241 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:20 ; elapsed = 00:03:23 . Memory (MB): peak = 3560.867 ; gain = 1728.617 ; free physical = 6272 ; free virtual = 15318
+Synthesis Optimization Complete : Time (s): cpu = 00:03:29 ; elapsed = 00:03:31 . Memory (MB): peak = 3560.867 ; gain = 1788.762 ; free physical = 6272 ; free virtual = 15318
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3575.691 ; gain = 0.000 ; free physical = 16249 ; free virtual = 22767
-INFO: [Netlist 29-17] Analyzing 1864 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3560.867 ; gain = 0.000 ; free physical = 6285 ; free virtual = 15331
+INFO: [Netlist 29-17] Analyzing 1856 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: u_bd/secure_soc_i/ila_0 UUID: 189972a3-78bb-5554-95a6-9510c00b8c55 
@@ -2104,21 +1751,21 @@ INFO: [Chipscope 16-324] Core: u_bd/secure_soc_i/ila_1 UUID: 284ab811-bc69-569a-
 INFO: [Chipscope 16-324] Core: u_bd/secure_soc_i/ila_2 UUID: ffbc1574-c5dc-58e8-9e63-0798d060a373 
 INFO: [Chipscope 16-324] Core: u_bd/secure_soc_i/ila_3 UUID: a65910c8-5d52-5035-974b-0fb42d9e1680 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.793 ; gain = 0.000 ; free physical = 16268 ; free virtual = 22785
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3604.977 ; gain = 0.000 ; free physical = 6276 ; free virtual = 15322
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 503 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 436 instances
   CFGLUT5 => SRLC32E: 65 instances
   SRL16 => SRL16E: 2 instances
 
-Synth Design complete | Checksum: 4911c510
+Synth Design complete | Checksum: 8da923cd
 INFO: [Common 17-83] Releasing license: Synthesis
-888 Infos, 376 Warnings, 0 Critical Warnings and 0 Errors encountered.
+569 Infos, 370 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:06 ; elapsed = 00:03:03 . Memory (MB): peak = 3619.828 ; gain = 2043.484 ; free physical = 16267 ; free virtual = 22784
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8267.115; main = 2723.165; forked = 6099.838
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17056.340; main = 3619.797; forked = 13850.223
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3643.805 ; gain = 0.000 ; free physical = 16263 ; free virtual = 22782
+synth_design: Time (s): cpu = 00:03:37 ; elapsed = 00:03:39 . Memory (MB): peak = 3605.012 ; gain = 2028.664 ; free physical = 6300 ; free virtual = 15346
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8018.042; main = 2715.299; forked = 5696.466
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 16889.102; main = 3604.980; forked = 13530.145
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3628.988 ; gain = 0.000 ; free physical = 6297 ; free virtual = 15345
 INFO: [Common 17-1381] The checkpoint '/home/llia622/ibex_hello_world/ibex_hello_world.runs/synth_1/pynq_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file pynq_wrapper_utilization_synth.rpt -pb pynq_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 25 16:52:14 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 13 16:14:35 2026...

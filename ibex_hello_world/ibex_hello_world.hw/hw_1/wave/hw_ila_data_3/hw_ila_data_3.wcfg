@@ -10,22 +10,16 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="8"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="528"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="293"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <NameColumnWidth column_width="302"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="19" />
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/smartconnect_0_M00_AXI_WREADY">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/smartconnect_0_M00_AXI_WREADY</obj_property>
-      <obj_property name="ObjectShortName">smartconnect_0_M00_AXI_WREADY</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
+   <wave_markers>
+   </wave_markers>
    <wvobject type="array" fp_name="u_bd/secure_soc_i/smartconnect_0_M00_AXI_AWADDR">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_bd/secure_soc_i/smartconnect_0_M00_AXI_AWADDR[5:0]</obj_property>
@@ -70,6 +64,14 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_bd/secure_soc_i/smartconnect_0_M00_AXI_RREADY</obj_property>
       <obj_property name="ObjectShortName">smartconnect_0_M00_AXI_RREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/smartconnect_0_M00_AXI_WREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/smartconnect_0_M00_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M00_AXI_WREADY</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

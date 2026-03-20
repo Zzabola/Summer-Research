@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:aes_axi_periph:1.0
-// IP Revision: 16
+// IP Revision: 37
 
 (* X_CORE_INFO = "aes_axi_periph,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "secure_soc_aes_axi_periph_0_2,aes_axi_periph,{}" *)

@@ -43,7 +43,7 @@ module pynq_wrapper (
   );
 
   ibex_simple_system #(
-    .SRAMInitFile("/home/llia622/ibex/examples/sw/simple_system/aes_hw_test/hello_test.vmem")
+    .SRAMInitFile("/home/llia622/ibex/examples/sw/simple_system/aes_poke_test/hello_test.vmem")
   ) u_ibex (
     .IO_CLK       (clk_sys),
     .IO_RST_N     (rst_sys_n),

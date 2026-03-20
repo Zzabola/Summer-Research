@@ -131,7 +131,7 @@
     "components": {
       "aes_axi_periph_0": {
         "vlnv": "user.org:user:aes_axi_periph:1.0",
-        "ip_revision": "16",
+        "ip_revision": "37",
         "xci_name": "secure_soc_aes_axi_periph_0_2",
         "xci_path": "ip/secure_soc_aes_axi_periph_0_2/secure_soc_aes_axi_periph_0_2.xci",
         "inst_hier_path": "aes_axi_periph_0",
@@ -217,7 +217,7 @@
       },
       "bus_axi_periph_0": {
         "vlnv": "user.org:user:bus_axi_periph:1.0",
-        "ip_revision": "30",
+        "ip_revision": "35",
         "xci_name": "secure_soc_bus_axi_periph_0_5",
         "xci_path": "ip/secure_soc_bus_axi_periph_0_5/secure_soc_bus_axi_periph_0_5.xci",
         "inst_hier_path": "bus_axi_periph_0",
@@ -445,8 +445,8 @@
       "Net": {
         "ports": [
           "proc_sys_reset_1/peripheral_aresetn",
-          "aes_axi_periph_0/s00_axi_aresetn",
-          "bus_axi_periph_0/rst_n"
+          "bus_axi_periph_0/rst_n",
+          "aes_axi_periph_0/s00_axi_aresetn"
         ]
       },
       "bus_axi_periph_0_dbg_in_write": {
@@ -544,12 +544,12 @@
           "clk_out1_0",
           "smartconnect_0/aclk",
           "ila_0/clk",
-          "aes_axi_periph_0/s00_axi_aclk",
           "ila_1/clk",
           "ila_2/clk",
           "ila_3/clk",
+          "proc_sys_reset_1/slowest_sync_clk",
           "bus_axi_periph_0/clk",
-          "proc_sys_reset_1/slowest_sync_clk"
+          "aes_axi_periph_0/s00_axi_aclk"
         ]
       },
       "proc_sys_reset_1_interconnect_aresetn": {

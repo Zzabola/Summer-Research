@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:bus_axi_periph:1.0
-// IP Revision: 30
+// IP Revision: 35
 
 `timescale 1ns/1ps
 

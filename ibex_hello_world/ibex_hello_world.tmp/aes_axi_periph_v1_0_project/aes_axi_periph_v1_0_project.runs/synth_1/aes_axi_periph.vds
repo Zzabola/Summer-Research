@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Mar  6 17:13:33 2026
+# Process ID         : 919995
+# Current directory  : /home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.runs/synth_1
+# Command line       : vivado -log aes_axi_periph.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_axi_periph.tcl
+# Log file           : /home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.runs/synth_1/aes_axi_periph.vds
+# Journal file       : /home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.runs/synth_1/vivado.jou
+# Running On         : en433345.uoa.auckland.ac.nz
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 33325 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35473 MB
+# Available Virtual  : 13601 MB
+#-----------------------------------------------------------
+source aes_axi_periph.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/llia622/ip_repo/aes_axi_periph_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/llia622/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/llia622/ip_repo/aes_axi_wrapper_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/llia622/2025.1/Vivado/data/ip'.
+Command: synth_design -top aes_axi_periph -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 920077
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1970.188 ; gain = 393.844 ; free physical = 552 ; free virtual = 11824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph' [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph.v:4]
+INFO: [Synth 8-6157] synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:155]
+INFO: [Synth 8-226] default block is never used [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:242]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:399]
+INFO: [Synth 8-226] default block is never used [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:440]
+INFO: [Synth 8-6157] synthesizing module 'AES' [/home/llia622/Downloads/AES-128-master/AES.sv:2]
+INFO: [Synth 8-6157] synthesizing module 's_box' [/home/llia622/Downloads/AES-128-master/s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 's_box' (0#1) [/home/llia622/Downloads/AES-128-master/s_box.sv:1]
+WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/Downloads/AES-128-master/AES.sv:97]
+WARNING: [Synth 8-2898] ignoring concurrent assertion [/home/llia622/Downloads/AES-128-master/AES.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [/home/llia622/Downloads/AES-128-master/key_expansion.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'g_funct' [/home/llia622/Downloads/AES-128-master/g_funct.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'g_funct' (0#1) [/home/llia622/Downloads/AES-128-master/g_funct.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [/home/llia622/Downloads/AES-128-master/key_expansion.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_encrypt' [/home/llia622/Downloads/AES-128-master/AES_encrypt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_encrypt' (0#1) [/home/llia622/Downloads/AES-128-master/AES_encrypt.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_decrypt' [/home/llia622/Downloads/AES-128-master/AES_decrypt.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'inv_s_box' [/home/llia622/Downloads/AES-128-master/inv_s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'inv_s_box' (0#1) [/home/llia622/Downloads/AES-128-master/inv_s_box.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES_decrypt' (0#1) [/home/llia622/Downloads/AES-128-master/AES_decrypt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AES' (0#1) [/home/llia622/Downloads/AES-128-master/AES.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph_slave_lite_v1_0_S00_AXI' (0#1) [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aes_axi_periph' (0#1) [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph.v:4]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_aes_core'. This will prevent further optimization [/home/llia622/ip_repo/aes_axi_periph_1_0/hdl/aes_axi_periph_slave_lite_v1_0_S00_AXI.v:538]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2063.125 ; gain = 486.781 ; free physical = 427 ; free virtual = 11699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2077.969 ; gain = 501.625 ; free physical = 422 ; free virtual = 11695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2077.969 ; gain = 501.625 ; free physical = 422 ; free virtual = 11695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_expansion'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_encrypt'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_decrypt'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'key_expansion', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                     Nr0 |                             0000 |                             0000
+                     Nr1 |                             0001 |                             0001
+                     Nr2 |                             0010 |                             0010
+                     Nr3 |                             0011 |                             0011
+                     Nr4 |                             0100 |                             0100
+                     Nr5 |                             0101 |                             0101
+                     Nr6 |                             0110 |                             0110
+                     Nr7 |                             0111 |                             0111
+                     Nr8 |                             1000 |                             1000
+                     Nr9 |                             1001 |                             1001
+                    Nr10 |                             1010 |                             1010
+                  FINISH |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'AES_encrypt', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                     Nr0 |                             0000 |                             0000
+                     Nr1 |                             0001 |                             0001
+                     Nr2 |                             0010 |                             0010
+                     Nr3 |                             0011 |                             0011
+                     Nr4 |                             0100 |                             0100
+                     Nr5 |                             0101 |                             0101
+                     Nr6 |                             0110 |                             0110
+                     Nr7 |                             0111 |                             0111
+                     Nr8 |                             1000 |                             1000
+                     Nr9 |                             1001 |                             1001
+                    Nr10 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'AES_decrypt', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    Nr10 |                             1010 |                             1010
+                     Nr9 |                             1001 |                             1001
+                     Nr8 |                             1000 |                             1000
+                     Nr7 |                             0111 |                             0111
+                     Nr6 |                             0110 |                             0110
+                     Nr5 |                             0101 |                             0101
+                     Nr4 |                             0100 |                             0100
+                     Nr3 |                             0011 |                             0011
+                     Nr2 |                             0010 |                             0010
+                     Nr1 |                             0001 |                             0001
+                     Nr0 |                             0000 |                             0000
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'aes_axi_periph_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2112.695 ; gain = 536.352 ; free physical = 362 ; free virtual = 11635
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 184   
+	   3 Input      8 Bit         XORs := 10    
+	   5 Input      8 Bit         XORs := 6     
+	   4 Input      8 Bit         XORs := 2     
+	   6 Input      8 Bit         XORs := 8     
+	   7 Input      8 Bit         XORs := 8     
++---Registers : 
+	              128 Bit    Registers := 13    
+	               32 Bit    Registers := 16    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 17    
+	  16 Input   32 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 132   
+	  13 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 17    
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module aes_axi_periph_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2384.805 ; gain = 808.461 ; free physical = 411 ; free virtual = 11473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+----------------------------+---------------+----------------+
+|Module Name | RTL Object                 | Depth x Width | Implemented As | 
++------------+----------------------------+---------------+----------------+
+|s_box       | out                        | 256x8         | LUT            | 
+|inv_s_box   | out                        | 256x8         | LUT            | 
+|AES_decrypt | genblk1[0].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[1].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[2].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[3].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[4].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[5].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[6].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[7].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[8].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[9].inv_s_box_/out  | 256x8         | LUT            | 
+|AES_decrypt | genblk1[10].inv_s_box_/out | 256x8         | LUT            | 
+|AES_decrypt | genblk1[11].inv_s_box_/out | 256x8         | LUT            | 
+|AES_decrypt | genblk1[12].inv_s_box_/out | 256x8         | LUT            | 
+|AES_decrypt | genblk1[13].inv_s_box_/out | 256x8         | LUT            | 
+|AES_decrypt | genblk1[14].inv_s_box_/out | 256x8         | LUT            | 
+|AES_decrypt | genblk1[15].inv_s_box_/out | 256x8         | LUT            | 
+|AES         | genblk1[4].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[9].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[14].s_box_/out     | 256x8         | LUT            | 
+|AES         | genblk1[3].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[8].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[13].s_box_/out     | 256x8         | LUT            | 
+|AES         | genblk1[2].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[7].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[12].s_box_/out     | 256x8         | LUT            | 
+|AES         | genblk1[1].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[6].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[11].s_box_/out     | 256x8         | LUT            | 
+|AES         | genblk1[0].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[5].s_box_/out      | 256x8         | LUT            | 
+|AES         | genblk1[10].s_box_/out     | 256x8         | LUT            | 
+|AES         | genblk1[15].s_box_/out     | 256x8         | LUT            | 
++------------+----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2384.805 ; gain = 808.461 ; free physical = 414 ; free virtual = 11476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2384.805 ; gain = 808.461 ; free physical = 410 ; free virtual = 11472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 392 ; free virtual = 11454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 392 ; free virtual = 11454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 392 ; free virtual = 11454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 392 ; free virtual = 11454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 397 ; free virtual = 11459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 397 ; free virtual = 11459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     2|
+|3     |LUT2  |   273|
+|4     |LUT3  |   459|
+|5     |LUT4  |   144|
+|6     |LUT5  |   348|
+|7     |LUT6  |  2923|
+|8     |MUXF7 |   554|
+|9     |MUXF8 |   191|
+|10    |FDCE  |  1674|
+|11    |FDPE  |     2|
+|12    |FDRE  |   476|
+|13    |IBUF  |    51|
+|14    |OBUF  |    41|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------+---------------------------------------+------+
+|      |Instance                                      |Module                                 |Cells |
++------+----------------------------------------------+---------------------------------------+------+
+|1     |top                                           |                                       |  7139|
+|2     |  aes_axi_periph_slave_lite_v1_0_S00_AXI_inst |aes_axi_periph_slave_lite_v1_0_S00_AXI |  7046|
+|3     |    u_aes_core                                |AES                                    |  6159|
+|4     |      \genblk1[3].s_box_                      |s_box_8                                |     8|
+|5     |      \genblk1[2].s_box_                      |s_box_7                                |     8|
+|6     |      \genblk1[1].s_box_                      |s_box_6                                |    16|
+|7     |      \genblk1[0].s_box_                      |s_box                                  |    12|
+|8     |      AES_decrypt_                            |AES_decrypt                            |  1557|
+|9     |        \genblk1[0].inv_s_box_                |inv_s_box                              |    15|
+|10    |        \genblk1[1].inv_s_box_                |inv_s_box_21                           |    14|
+|11    |        \genblk1[2].inv_s_box_                |inv_s_box_22                           |    18|
+|12    |        \genblk1[3].inv_s_box_                |inv_s_box_23                           |    18|
+|13    |        \genblk1[4].inv_s_box_                |inv_s_box_24                           |    16|
+|14    |        \genblk1[5].inv_s_box_                |inv_s_box_25                           |    14|
+|15    |        \genblk1[6].inv_s_box_                |inv_s_box_26                           |    20|
+|16    |        \genblk1[7].inv_s_box_                |inv_s_box_27                           |    19|
+|17    |        \genblk1[8].inv_s_box_                |inv_s_box_28                           |    16|
+|18    |        \genblk1[9].inv_s_box_                |inv_s_box_29                           |    17|
+|19    |        \genblk1[10].inv_s_box_               |inv_s_box_15                           |    18|
+|20    |        \genblk1[11].inv_s_box_               |inv_s_box_16                           |    18|
+|21    |        \genblk1[12].inv_s_box_               |inv_s_box_17                           |    19|
+|22    |        \genblk1[13].inv_s_box_               |inv_s_box_18                           |    19|
+|23    |        \genblk1[14].inv_s_box_               |inv_s_box_19                           |    17|
+|24    |        \genblk1[15].inv_s_box_               |inv_s_box_20                           |    19|
+|25    |      AES_encrypt_                            |AES_encrypt                            |   749|
+|26    |      \genblk1[10].s_box_                     |s_box_0                                |    24|
+|27    |      \genblk1[11].s_box_                     |s_box_1                                |    24|
+|28    |      \genblk1[12].s_box_                     |s_box_2                                |    24|
+|29    |      \genblk1[13].s_box_                     |s_box_3                                |    24|
+|30    |      \genblk1[14].s_box_                     |s_box_4                                |    24|
+|31    |      \genblk1[15].s_box_                     |s_box_5                                |    24|
+|32    |      \genblk1[4].s_box_                      |s_box_9                                |    24|
+|33    |      \genblk1[5].s_box_                      |s_box_10                               |    24|
+|34    |      \genblk1[6].s_box_                      |s_box_11                               |    24|
+|35    |      \genblk1[7].s_box_                      |s_box_12                               |    24|
+|36    |      \genblk1[8].s_box_                      |s_box_13                               |    24|
+|37    |      \genblk1[9].s_box_                      |s_box_14                               |    24|
+|38    |      key_expansion_                          |key_expansion                          |  3521|
++------+----------------------------------------------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 397 ; free virtual = 11459
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.617 ; gain = 856.273 ; free physical = 397 ; free virtual = 11459
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2432.625 ; gain = 856.273 ; free physical = 397 ; free virtual = 11459
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2448.461 ; gain = 0.000 ; free physical = 560 ; free virtual = 11621
+INFO: [Netlist 29-17] Analyzing 745 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2560.230 ; gain = 0.000 ; free physical = 469 ; free virtual = 11532
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: eb7b17b1
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2561.266 ; gain = 984.922 ; free physical = 469 ; free virtual = 11532
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1539.223; main = 1537.241; forked = 190.812
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3295.680; main = 2561.234; forked = 963.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2585.242 ; gain = 0.000 ; free physical = 469 ; free virtual = 11533
+INFO: [Common 17-1381] The checkpoint '/home/llia622/ibex_hello_world/ibex_hello_world.tmp/aes_axi_periph_v1_0_project/aes_axi_periph_v1_0_project.runs/synth_1/aes_axi_periph.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file aes_axi_periph_utilization_synth.rpt -pb aes_axi_periph_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  6 17:14:04 2026...

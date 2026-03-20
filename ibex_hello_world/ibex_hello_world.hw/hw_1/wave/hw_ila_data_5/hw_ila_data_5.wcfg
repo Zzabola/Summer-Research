@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/llia622/ibex_hello_world/ibex_hello_world.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="526"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="293"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_decrypt_r">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_decrypt_r</obj_property>
+      <obj_property name="ObjectShortName">pulse_decrypt_r</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_encrypt_r">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_encrypt_r</obj_property>
+      <obj_property name="ObjectShortName">pulse_encrypt_r</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_set_key_r">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/pulse_set_key_r</obj_property>
+      <obj_property name="ObjectShortName">pulse_set_key_r</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_dec_busy">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_dec_busy</obj_property>
+      <obj_property name="ObjectShortName">status_dec_busy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_dec_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_dec_done</obj_property>
+      <obj_property name="ObjectShortName">status_dec_done</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_enc_busy">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_enc_busy</obj_property>
+      <obj_property name="ObjectShortName">status_enc_busy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_enc_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_enc_done</obj_property>
+      <obj_property name="ObjectShortName">status_enc_done</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_key_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/status_key_done</obj_property>
+      <obj_property name="ObjectShortName">status_key_done</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/wr_ctrl">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/wr_ctrl</obj_property>
+      <obj_property name="ObjectShortName">wr_ctrl</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/wr_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_aes_dev_addr">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_aes_dev_addr[31:2]</obj_property>
+      <obj_property name="ObjectShortName">dbg_aes_dev_addr[31:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_aes_dev_be">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_aes_dev_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_aes_dev_be[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_aes_dev_req">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_aes_dev_req</obj_property>
+      <obj_property name="ObjectShortName">dbg_aes_dev_req</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_aes_dev_wdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_aes_dev_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_aes_dev_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_aes_dev_we">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_aes_dev_we</obj_property>
+      <obj_property name="ObjectShortName">dbg_aes_dev_we</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_host_addr">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_addr[31:2]</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_addr[31:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_host_be">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_be[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_host_gnt">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_gnt</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_gnt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_host_req">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_req</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_req</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_host_rvalid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_rvalid</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_rvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_ibex/dbg_host_wdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_ibex/dbg_host_we">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ibex/dbg_host_we</obj_property>
+      <obj_property name="ObjectShortName">dbg_host_we</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_decrypt">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_decrypt</obj_property>
+      <obj_property name="ObjectShortName">dbg_pulse_decrypt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_encrypt">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_encrypt</obj_property>
+      <obj_property name="ObjectShortName">dbg_pulse_encrypt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_set_key">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_pulse_set_key</obj_property>
+      <obj_property name="ObjectShortName">dbg_pulse_set_key</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg10">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg10[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg11">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg11[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg12">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg12[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg13">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg13[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg14">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg14[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg15">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg15[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg4">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg5">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg6">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg6[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg7">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg7[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg8">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg8[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg9">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg9[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg_wren">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg_wren</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg_wren</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_dec_busy">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_dec_busy</obj_property>
+      <obj_property name="ObjectShortName">dbg_status_dec_busy</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_dec_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_dec_done</obj_property>
+      <obj_property name="ObjectShortName">dbg_status_dec_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_enc_busy">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_enc_busy</obj_property>
+      <obj_property name="ObjectShortName">dbg_status_enc_busy</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_enc_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_enc_done</obj_property>
+      <obj_property name="ObjectShortName">dbg_status_enc_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_key_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_status_key_done</obj_property>
+      <obj_property name="ObjectShortName">dbg_status_key_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_wr_addr">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_wr_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_wr_addr[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_wr_ctrl">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_wr_ctrl</obj_property>
+      <obj_property name="ObjectShortName">dbg_wr_ctrl</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg0">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg1[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg2">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg2[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg3">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/aes_axi_periph_0/inst/aes_axi_periph_slave_lite_v1_0_S00_AXI_inst/dbg_slv_reg3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_slv_reg3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

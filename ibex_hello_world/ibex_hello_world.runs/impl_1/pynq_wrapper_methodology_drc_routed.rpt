@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Wed Feb 25 16:54:14 2026
+| Date         : Fri Mar 13 16:17:01 2026
 | Host         : en433345.uoa.auckland.ac.nz running 64-bit Ubuntu 24.04.2 LTS
 | Command      : report_methodology -file pynq_wrapper_methodology_drc_routed.rpt -pb pynq_wrapper_methodology_drc_routed.pb -rpx pynq_wrapper_methodology_drc_routed.rpx
 | Design       : pynq_wrapper
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 44
+             Checks found: 46
 +----------+----------+---------------------------------------------+--------+
 | Rule     | Severity | Description                                 | Checks |
 +----------+----------+---------------------------------------------+--------+
 | LUTAR-1  | Warning  | LUT drives async reset alert                | 4      |
 | SYNTH-6  | Warning  | Timing of a RAM block might be sub-optimal  | 16     |
 | SYNTH-15 | Warning  | Byte wide write enable not inferred         | 16     |
-| XDCB-5   | Warning  | Runtime inefficient way to find pin objects | 8      |
+| XDCB-5   | Warning  | Runtime inefficient way to find pin objects | 10     |
 +----------+----------+---------------------------------------------+--------+
 
 2. REPORT DETAILS
@@ -237,35 +237,47 @@ Related violations: <none>
 
 XDCB-5#3 Warning
 Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '279' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.runs/impl_1/.Xil/Vivado-3564642-en433345.uoa.auckland.ac.nz/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
-XDCB-5#4 Warning
+XDCB-5#5 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '99' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
-XDCB-5#5 Warning
+XDCB-5#6 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '154' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_2_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
-XDCB-5#6 Warning
+XDCB-5#7 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '209' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_3_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
-XDCB-5#7 Warning
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '279' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.runs/impl_1/.Xil/Vivado-3564642-en433345.uoa.auckland.ac.nz/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#9 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
-XDCB-5#8 Warning
+XDCB-5#10 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '99' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: /home/llia622/ibex_hello_world/ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_ila_1_0/ila_v6_2/constraints/ila.xdc (Line: 72)

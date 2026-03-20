@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:bus_axi_periph:1.0
-// IP Revision: 30
+// IP Revision: 35
 
 (* X_CORE_INFO = "bus_to_axi,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "secure_soc_bus_axi_periph_0_5,bus_to_axi,{}" *)

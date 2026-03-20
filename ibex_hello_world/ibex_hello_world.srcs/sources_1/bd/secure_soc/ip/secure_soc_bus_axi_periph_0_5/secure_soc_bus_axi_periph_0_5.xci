@@ -4,7 +4,7 @@
     "xci_name": "secure_soc_bus_axi_periph_0_5",
     "cell_name": "bus_axi_periph_0",
     "component_reference": "user.org:user:bus_axi_periph:1.0",
-    "ip_revision": "30",
+    "ip_revision": "35",
     "gen_directory": "../../../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_bus_axi_periph_0_5",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "30" } ],
+        "IPREVISION": [ { "value": "35" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_bus_axi_periph_0_5" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

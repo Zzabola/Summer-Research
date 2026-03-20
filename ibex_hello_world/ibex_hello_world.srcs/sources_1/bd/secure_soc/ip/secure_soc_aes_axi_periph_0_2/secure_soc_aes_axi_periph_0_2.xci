@@ -4,7 +4,7 @@
     "xci_name": "secure_soc_aes_axi_periph_0_2",
     "cell_name": "aes_axi_periph_0",
     "component_reference": "user.org:user:aes_axi_periph:1.0",
-    "ip_revision": "16",
+    "ip_revision": "37",
     "gen_directory": "../../../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_aes_axi_periph_0_2",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "16" } ],
+        "IPREVISION": [ { "value": "37" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ibex_hello_world.gen/sources_1/bd/secure_soc/ip/secure_soc_aes_axi_periph_0_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

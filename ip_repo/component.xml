@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6311bfe5</spirit:value>
+            <spirit:value>72dfd652</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -312,7 +312,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6311bfe5</spirit:value>
+            <spirit:value>72dfd652</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -826,7 +826,7 @@
       <spirit:file>
         <spirit:name>src/bus_to_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6311bfe5</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_72dfd652</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -881,14 +881,14 @@
       </xilinx:taxonomies>
       <xilinx:displayName>bus_axi_periph_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>30</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-25T01:57:16Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>35</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-05T01:53:07Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="32afcded"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="68e94c68"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6578fb1a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="01f51389"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="581b61fb"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bbba02cc"/>
     </xilinx:packagingInfo>

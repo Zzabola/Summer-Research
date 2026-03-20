@@ -10,14 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,024"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomEndTime time="1,090"></ZoomEndTime>
+      <Cursor1Time time="580"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="293"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <NameColumnWidth column_width="352"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="23" />
    <wave_markers>
    </wave_markers>
    <wvobject type="array" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_ARADDR">
@@ -58,24 +58,10 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY">
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY</obj_property>
-      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_AWREADY</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWVALID">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWVALID</obj_property>
-      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_AWVALID</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BREADY">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BREADY</obj_property>
-      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_BREADY</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_WREADY</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -84,6 +70,21 @@
       <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BRESP[1:0]</obj_property>
       <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_BRESP[1:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_RREADY</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -109,6 +110,13 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_RVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RRESP">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RRESP[1:0]</obj_property>
@@ -117,10 +125,24 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RVALID">
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWVALID">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_RVALID</obj_property>
-      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_RVALID</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_AWVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_AWREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_AWREADY</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -129,13 +151,6 @@
       <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WDATA[31:0]</obj_property>
       <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_WDATA[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY</obj_property>
-      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_WREADY</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -151,6 +166,27 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WVALID</obj_property>
       <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_WVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_WREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_BVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_bd/secure_soc_i/bus_axi_periph_0_M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">bus_axi_periph_0_M_AXI_BREADY</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
